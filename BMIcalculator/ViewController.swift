@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var textfield:UITextField!
+    var number:Int = 0
+    
+    @IBOutlet var textfield2:UITextField!
+    var number2:Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +24,14 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func clear(){
+        number = 0
+        textfield.text = "\(number)"
+    }
+    @IBAction func check(){
+        number3 = number / (number2 * number2)
     }
 
 
