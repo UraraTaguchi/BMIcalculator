@@ -61,20 +61,38 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         return str;
     }
     
-    
     @IBOutlet var label:UILabel!
+    @IBOutlet var label2:UILabel!
+    @IBOutlet var myImage:UIImageView!
     
-    var bminumber: Int = str.toInt()!
+    var bminumber: Int = 0
     
     @IBAction func check(){
-        bminumber = myValues * myValues / myValues2
+        var str: String = "0"
+        var myValues: Int = str.toInt()!
+        var myValues2: Int = str.toInt()!
+        
+        String(bminumber) = myValues * myValues / myValues2
         label.text = "\(bminumber)"
         
         
-    }
-
-    
-
-
+        if bminumber >= 22 {
+        label.text = ("ちょいぽちゃ")
+            label2.text = ("ちょっと太り気味かも。適度な運動量と食事量にしてみよう")
+            let myImage = UIImage(named: "どらえもん.jpg")
+        } else if bminumber >= 20 {
+            label.text = ("健康体")
+            label2.text = ("いたって普通。健康な美ボディ")
+             let myImage = UIImage(named: "じゃいこ.jpg")
+        } else if bminumber >= 17{
+            label.text = ("モデル並み")
+            label2.text = ("若干痩せ気味。モデルの様な美しいカラダ")
+             let myImage = UIImage(named: "しずかちゃん.jpg")
+        } else if bminumber <= 19{
+            label.text = ("ガリガリ")
+            label2.text = ("ちょっと痩せすぎかも。適度な運動量と食事量にしてみよう")
+             let myImage = UIImage(named: "しずかちゃん.jpg")
+        }
+        }
 }
 

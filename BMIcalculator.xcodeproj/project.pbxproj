@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E448268C1AB0A33200F42138 /* しずかちゃん.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E448268A1AB0A33200F42138 /* しずかちゃん.jpg */; };
+		E448268D1AB0A33200F42138 /* すねお.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E448268B1AB0A33200F42138 /* すねお.jpg */; };
+		E44826901AB0A35000F42138 /* じゃいこ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E448268E1AB0A35000F42138 /* じゃいこ.jpg */; };
+		E44826911AB0A35000F42138 /* どらえもん.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E448268F1AB0A35000F42138 /* どらえもん.jpg */; };
 		E45EBB2A1AAB20B60057299A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45EBB291AAB20B60057299A /* AppDelegate.swift */; };
 		E45EBB2C1AAB20B60057299A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45EBB2B1AAB20B60057299A /* ViewController.swift */; };
 		E45EBB2F1AAB20B60057299A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45EBB2D1AAB20B60057299A /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E448268A1AB0A33200F42138 /* しずかちゃん.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "しずかちゃん.jpg"; sourceTree = "<group>"; };
+		E448268B1AB0A33200F42138 /* すねお.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "すねお.jpg"; sourceTree = "<group>"; };
+		E448268E1AB0A35000F42138 /* じゃいこ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "じゃいこ.jpg"; path = "../../../Downloads/じゃいこ.jpg"; sourceTree = "<group>"; };
+		E448268F1AB0A35000F42138 /* どらえもん.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "どらえもん.jpg"; path = "../../../Downloads/どらえもん.jpg"; sourceTree = "<group>"; };
 		E45EBB241AAB20B60057299A /* BMIcalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMIcalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45EBB281AAB20B60057299A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45EBB291AAB20B60057299A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +85,10 @@
 		E45EBB261AAB20B60057299A /* BMIcalculator */ = {
 			isa = PBXGroup;
 			children = (
+				E448268E1AB0A35000F42138 /* じゃいこ.jpg */,
+				E448268F1AB0A35000F42138 /* どらえもん.jpg */,
+				E448268A1AB0A33200F42138 /* しずかちゃん.jpg */,
+				E448268B1AB0A33200F42138 /* すねお.jpg */,
 				E45EBB291AAB20B60057299A /* AppDelegate.swift */,
 				E45EBB2B1AAB20B60057299A /* ViewController.swift */,
 				E45EBB2D1AAB20B60057299A /* Main.storyboard */,
@@ -193,7 +205,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45EBB2F1AAB20B60057299A /* Main.storyboard in Resources */,
+				E448268D1AB0A33200F42138 /* すねお.jpg in Resources */,
+				E44826911AB0A35000F42138 /* どらえもん.jpg in Resources */,
+				E448268C1AB0A33200F42138 /* しずかちゃん.jpg in Resources */,
 				E45EBB341AAB20B60057299A /* LaunchScreen.xib in Resources */,
+				E44826901AB0A35000F42138 /* じゃいこ.jpg in Resources */,
 				E45EBB311AAB20B60057299A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +421,7 @@
 				E45EBB451AAB20B60057299A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E45EBB461AAB20B60057299A /* Build configuration list for PBXNativeTarget "BMIcalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				E45EBB481AAB20B60057299A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
