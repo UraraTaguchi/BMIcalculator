@@ -31,8 +31,15 @@
                                     <action selector="check" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q8q-aF-a8t"/>
                                 </connections>
                             </button>
+                            <pickerView tag="1" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vBV-XI-8DX">
+                                <rect key="frame" x="159" y="12" width="161" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="YKF-Tp-XjE"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="kQu-mm-9jG"/>
+                                </connections>
+                            </pickerView>
                             <pickerView tag="2" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fo0-AN-oW0">
-                                <rect key="frame" x="16" y="12" width="161" height="162"/>
+                                <rect key="frame" x="0.0" y="12" width="161" height="162"/>
                                 <connections>
                                     <outlet property="dataSource" destination="vXZ-lx-hvc" id="SDO-ko-6Yl"/>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="kkP-Gb-9BP"/>
@@ -44,6 +51,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="heightPickerView" destination="fo0-AN-oW0" id="Aqq-Hq-R4A"/>
+                        <outlet property="label" destination="gDa-pU-zxE" id="c9n-A4-a8R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
