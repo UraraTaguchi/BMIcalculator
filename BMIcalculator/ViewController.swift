@@ -18,10 +18,42 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var myValues2 = ["30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110"]
 
     
+    // Labelのアウトレット
+    @IBOutlet weak var label3: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    // saveボタンのアクション
+    @IBAction func saveButton(sender: AnyObject) {
+        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        
+        userDefaults.setObject(label2.text?, forKey: "saveText")
+    }
+    
+    // loadボタンのアクション
+    @IBAction func loadButton(sender: AnyObject) {
+        // データ読み込み処理
+        
+        // NSUserDefaultsインスタンスの生成
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        
+        // キーが"saveText"のStringをとります。
+        var loadText : String! = userDefaults.stringForKey("saveText")
+        
+        // labelに表示
+        label3.text = loadText
+    }
+
     
     func numberOfComponentsInPickerView(heightpickerView: UIPickerView) -> Int {
         //項目の列数
