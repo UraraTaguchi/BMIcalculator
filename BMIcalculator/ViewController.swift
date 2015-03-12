@@ -18,6 +18,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     var myValues2 = ["30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110"]
 
     
+    
     // Labelのアウトレット
     @IBOutlet weak var label3: UILabel!
     
@@ -31,6 +32,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     // saveボタンのアクション
     @IBAction func saveButton(sender: AnyObject) {
@@ -69,7 +71,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         if (pickerView.tag == 1) {
             number =  64;
         }
-        
         if (pickerView.tag == 2) {
             number =  80;
         }
@@ -114,16 +115,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             let myImage = UIImage(named: "どらえもん.jpg")
         } else if bminumber >= 20 {
             label.text = ("健康体")
-            label2.text = ("いたって普通。健康な美ボディ")
+            label2.text = ("いたって普通。健康な美ボディ。意地を目指そう！")
              let myImage = UIImage(named: "じゃいこ.jpg")
         } else if bminumber >= 17{
             label.text = ("モデル並み")
-            label2.text = ("若干痩せ気味。モデルの様な美しいカラダ")
+            label2.text = ("若干痩せ気味。モデルの様な美しいカラダ！痩せすぎには気をつけて！")
              let myImage = UIImage(named: "しずかちゃん.jpg")
         } else if bminumber <= 19{
             label.text = ("ガリガリ")
-            label2.text = ("ちょっと痩せすぎかも。適度な運動量と食事量にしてみよう")
-             let myImage = UIImage(named: "しずかちゃん.jpg")
+            label2.text = ("ちょっと痩せすぎかも。適度な運動量と食事量にしたほうがかわいいよ！")
+             let myImage = UIImage(named: "すねお.jpg")
         }
         }
 }
